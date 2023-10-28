@@ -1,3 +1,0 @@
-Archivo de texto para versionar
-Version: 3
-Listo para el próximo commit
