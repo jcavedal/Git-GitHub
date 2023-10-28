@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Estilos generales */
+
+header {
+    background: #d966f9;
+    padding: 10px 50px;
+}
+
+.image-container {
+    display: flex;
+}
+
+.image-container img {
+    width: 100%;
+}
+
+/* Estilos del header */
+
+#logo {
+    width: 50px;
+}
+
+#logo img {
+    border-radius: 50%;
+    border: 2px solid #ffffff;
+}
+
+/* Estilos del hero */
+
+#hero {
+    position: relative;
+    /* No permiten que sus elementos se salgan del espacio de esta section */
+}
+
+#hero #computadora{
+    display: inline-block;
+    width: 100%;
+}
+
+#hero .informacion-contenedor {
+    position: absolute;
+    /* No empieza desde el pixel 0 porque el section "#hero" tiene: position: relative; */
+    top: 50%;
+    /* Inicia a partir del 50% (mirar siguiente linea) */
+    transform: translateY(-50%);
+    /* Teniendo el cuenta la linea "top: 50%;" ahora en lugar de empezar en el 50%, ahora el 50% de la imagen empieza en el 50%, entonces ahora si esta bien centrado */
+    left: 0;
+    display: flex;
+    /* Permite que el texto este al costado de la imagen, en lugar de estar abajo como viene por defecto */
+    width: 100%;
+    color: #ffffff;
+    padding: 0 50px;
+    /* 0 de arriba a abajo y 50 de izquierda a derecha */
+}
+
+#hero .informacion-contenedor #foto {
+    width: 200px;
+}
+
+#hero .informacion-contenedor #foto img {
+    border-radius: 100%;
+}
+
+#hero .informacion-contenedor .informacion {
+    margin-left: 20px;
+    font-weight: bold;
+    width: calc(100% - 200px);
+    /* Clase 14 */
+}
+
+#hero .informacion-contenedor .informacion span {
+    display: flex;
+    color: #a4a4a4;
+    margin-bottom: 70px;
+}
+
+/* Estilos del main */
+
+main {
+    padding: 100px;
+}
+
+main .social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    /* Para abajo */
+    list-style: none;
+    /* Quita el puntito que viene por defecto, como tenemos los iconos este estorba */
+}
+main .social-icons li {
+    margin-left: 8px;
+}
+
+main .social-icons .social-icon {
+    display: flex;
+    justify-content: center;
+    /*Los centra horizontalmente */
+    align-items: center;
+    /* Los centra verticalmente */
+    background: #f9c166;
+    padding: 15px;
+    /* Mas grandes */
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    /* Ultimas 2 lineas para que ocupen todo el espacio disponible */
+}
+main .social-icons #LinkedIn{
+    background: #0077b0;
+}
+main .social-icons #GitHub{
+    background: #23272d;
+}
+main .social-icons #Twitter{
+    background: #1da1f2;
+}
+main .social-icons #YouTube{
+    background: #f70000;
+}
+main .social-icons #Platzi{
+    background: #121f3d;
+}
