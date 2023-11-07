@@ -1,0 +1,49 @@
+﻿Code,Tipo,Info
+cd,,“Change directory”
+pwd,,Muestra el directorio actual
+ls,,Muestra los elementos del directorio actual
+clear,,Limpia la terminal
+mkdir,,“Make directory” Crea una carpeta
+touch,,Crea un archivo
+cat,,Muestra en la consola el contenido de un archivo
+history,,Muestra el historial de comandos
+code,,Inicia Visual studio code
+git init,Git,Crea la carpeta oculta “.git” e inicia el repositorio
+git status,Git,Estado actual del repositorio incluytendo rama actual
+git config,Git,Muestra las configuraciones de git
+git add,Git,"Agrega un archivo a la ram y esta listo para el commit.
+El archivo pasa de “untracked” a “staging”"
+git rm,Git,"Elimina el archivo o carpeta
+El archivo pasa de “staging” a “untracked”"
+git reset,Git,Nos permite volver a una version anterior
+git commit,Git,Crea un commit que debe tener un mensaje
+git log,Git,Muestra la historia de un archivo o carpeta con sus commit
+git show,Git,Muestra el ultimo commit y muestra el diff (diferencias entre versiones)
+git diff,Git,"Compara 2 versiones desde el indicador del commit (osea el codigo alfanumerico que tiene cada commit) dependiendo del orden en que lo escribamos, recomiendo colocar la version mas reciente al final"
+git checkout,Git,"Con este comando nos movemos a la rama que quieramos trabajar, asi podemos ver como la dejamos la ultima vez."
+git clone,"Git, GitHub",Clonamos un repositorio remoto y lo traemos a local (staging no recibe cambios).
+git push,"Git, GitHub",Envía al repositorio remoto el head del main.
+git pull,"Git, GitHub","Copia el repositorio remoto y trae esta copia al directorio de trabajo y al repositorio local, haciendo a la vez un merge"
+git fetch,"Git, GitHub","Trae al repositorio local los últimos cambios del repositorio remoto pero no los copia en mis archivos, para eso esta ‘git merge’."
+git merge,Git,"Crea un nuevo commit en la rama actual, combinando los archivos de la rama a la que le quiero hacer merge.
+Si hay conflictos hay que solucionarlos para que el merge se realice."
+git branch,Git,Crea una rama.
+CAMBIO DE NOMBRE DE RAMA,Git,Queremos cambiar el nombre de la rama “main” a “master” a continuacion los pasos.
+git config,"Git, GitHub",Muestra y cambia los ajustes de git.
+LLAVE SSH,,"Creamos 2 llaves, pública y privada."
+git remote,Git,Creamos un origen REMOTO de nuestros archivos.
+git tag,Git,Le damos el nombre a una version del proyecto.
+gitk,Git,Abre en un software una interfaz donde se ven las ramas
+FORK,GitHub,Toma una copia del estado actual del proyecto (publico) y lo clona.
+.gitignore,"Git, GitHub",Creamos un archivo para elegir ciertos archivos (pesados o de img) para ignorarlos en Git
+git rebase,Git,Es considerada una mala practica cuando se usa fuera del entorno local. Lo que hace es sumar 2 ramas pero solo siguiendo los siguientes pasos
+git stash,Git,"Guarda los cambios recientes no commiteados en un estado temporal en la rama que me encuentro, para asi poder hacer checkout a otra rama, ver lo que hay y despues volver a la rama original y con git stash pop recupero estos cambios recientes no comiteados sin haber hecho commit en ningun momento"
+git clean,Git,"Asi como con git add agregamos los archivos al repositorio de git, con git clean eliminamos estos archivos, en realidad se eliminan los archivos que se han creado y no se han agregado previamente con git add"
+git cherry-pick,Git,Nos permite traer un commit anterior de otra rama a la rama master. No es necesario hacer commit luego
+git reflog,Git,
+git grep,Git,Nos permite buscar una palabra o frase en la rama en que nos encontremos
+git shortlog,"Git, GitHub",Muestra la cuantos commits ha hecho cada miembro del equipo
+npx degit sveltejs/template,Svelte,Con este comando se crea un proyecto base de svelte
+npm run dev,Svelte,Habilita la visualizacion de la pagina siempre que se mantenga la ventana de git sin cerrar
+npm install,Svelte,Instala las dependencias del recientemente creado proyecto de svelte
+start .,,Abre la carpeta en el directorio actual
